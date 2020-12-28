@@ -15,7 +15,7 @@ import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.activity_posts.*
 
 private const val TAG = "PostsActivity"
-private const val EXTRA_USERNAME="EXTRA_USERNAME"
+ const val EXTRA_USERNAME="EXTRA_USERNAME"
 open class PostsActivity : AppCompatActivity() {
 
     private var signedInUser: User?= null
@@ -68,6 +68,11 @@ open class PostsActivity : AppCompatActivity() {
             for(post in postList){
                 Log.i(TAG,"Post ${post}")
             }
+        }
+
+        fabCreate.setOnClickListener {
+            val intent = Intent(this, CreateActivity::class.java)
+            startActivity(intent)
         }
     }
 
