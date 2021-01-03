@@ -11,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Instafire">
-        <activity android:name=".CreateActivity"></activity>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".CreateActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".PostsActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
